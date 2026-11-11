@@ -8,10 +8,17 @@
 
 前往 [Releases 下载页](https://github.com/Reze1ove/bobochu-playtest/releases)，展开 **Assets**，选择对应系统的 ZIP。不要下载自动生成的 Source code，那不是游戏安装包。
 
-| 系统 | 文件 | 验证情况 |
+| 系统与语言 | 文件 | 验证情况 |
 | --- | --- | --- |
-| macOS | `Bobochu-v0.1-test2-macOS.zip` | Apple Silicon 已本机运行检查；Intel 待验证 |
-| Windows 64 位 | `Bobochu-v0.1-test2-windows-x86_64.zip` | 已跨平台导出，等待 Windows 实机试玩 |
+| macOS · 中文 | `Bobochu-v0.1-test2-macOS.zip` | Apple Silicon 已本机运行检查；Intel 待验证 |
+| Windows 64 位 · 中文 | `Bobochu-v0.1-test2-windows-x86_64.zip` | 已跨平台导出，等待 Windows 实机试玩 |
+| Windows 64 位 · 한국어 | `Bobochu-v0.1-test2-ko-windows-x86_64.zip` | 韩语画面与数据已在 Mac 检查；Windows 实机与母语校对待完成 |
+
+### 한국어 체험판
+
+Windows용 한국어 버전은 파일명에 `-ko-`가 있는 ZIP입니다. 게임 UI, 툴팁, 오른쪽 위의 ‘플레이 방법’ 세 페이지와 한국어 안내가 포함되어 있습니다. 전체를 압축 해제한 뒤 `Bobochu.exe`를 실행하세요. 같은 폴더의 `Bobochu.pck`를 이동하거나 삭제하지 마세요. Godot 설치는 필요 없습니다.
+
+Windows 실제 실행과 한국어 원어민 교정은 아직 검증 전입니다. 실행 문제나 어색한 표현은 초대한 사람에게 알려 주시거나 Issues에 남겨 주세요.
 
 无需安装 Godot。请先完整解压，再启动里面的应用。
 
@@ -32,7 +39,7 @@
 
 ```text
 系统与版本：
-试玩包版本：v0.1-test2
+试玩包版本与语言：v0.1-test2 / v0.1-test2-ko
 Bot 难度：
 现象（哪里不懂 / 预期与实际有什么不同）：
 出现时第几回合、各玩家动作（记得多少写多少）：
@@ -49,4 +56,5 @@ Bot 难度：
 ```text
 01a0784e174828731ae153f780abfb9f9955ca8f6a6deef91235d3a9bd553c81  Bobochu-v0.1-test2-macOS.zip
 f5292101649afd1957db5d238845e609e2da677b6f3c9af2ff2fa49314e24e2f  Bobochu-v0.1-test2-windows-x86_64.zip
+7f1bc47f187528f8ff191ea088f4b76020042b90643f4001c0abe42d6184111d  Bobochu-v0.1-test2-ko-windows-x86_64.zip
 ```
