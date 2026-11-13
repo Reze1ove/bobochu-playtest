@@ -6,19 +6,21 @@
 
 ## 下载
 
-前往 [Releases 下载页](https://github.com/Reze1ove/bobochu-playtest/releases)，展开 **Assets**，选择对应系统的 ZIP。不要下载自动生成的 Source code，那不是游戏安装包。
+前往 [test3 下载页](https://github.com/Reze1ove/bobochu-playtest/releases/tag/v0.1.0-test.3)，展开 **Assets**，选择对应系统的 ZIP。不要下载自动生成的 Source code，那不是游戏安装包。旧 test2 保留在 Releases 历史中。
 
 | 系统与语言 | 文件 | 验证情况 |
 | --- | --- | --- |
-| macOS · 中文 | `Bobochu-v0.1-test2-macOS.zip` | Apple Silicon 已本机运行检查；Intel 待验证 |
-| Windows 64 位 · 中文 | `Bobochu-v0.1-test2-windows-x86_64.zip` | 已跨平台导出，等待 Windows 实机试玩 |
-| Windows 64 位 · 한국어 | `Bobochu-v0.1-test2-ko-windows-x86_64.zip` | 韩语画面与数据已在 Mac 检查；Windows 实机与母语校对待完成 |
+| macOS · 中文 | `Bobochu-v0.1-test3-macOS.zip` | Apple Silicon 独立启动与渲染检查通过；Intel 待验证 |
+| Windows 64 位 · 中文 | `Bobochu-v0.1-test3-windows-x86_64.zip` | 已跨平台导出，等待 Windows 实机试玩 |
+| Windows 64 位 · 한국어 | `Bobochu-v0.1-test3-ko-windows-x86_64.zip` | 韩语画面与数据已在 Mac 检查；Windows 实机与母语校对待完成 |
+
+test3 新增基础教学、启动提醒、两颗心、不限思考时间、淘汰后跳过对局、F11全屏、锁定提示音及本轮战报复制。源码回归为63组、3784次断言、0失败；自动检查不代替真人试玩，提示音听感仍待确认。Mac ZIP约77MiB，Windows各约56MiB。
 
 ### 한국어 체험판
 
-Windows용 한국어 버전은 파일명에 `-ko-`가 있는 ZIP입니다. 게임 UI, 툴팁, 오른쪽 위의 ‘플레이 방법’ 세 페이지와 한국어 안내가 포함되어 있습니다. 전체를 압축 해제한 뒤 `Bobochu.exe`를 실행하세요. 같은 폴더의 `Bobochu.pck`를 이동하거나 삭제하지 마세요. Godot 설치는 필요 없습니다.
+Windows용 한국어 버전은 파일명에 `-ko-`가 있는 ZIP입니다. 게임 UI, 규칙 도움말과 기본 튜토리얼이 포함되어 있습니다. 생명 2개로 시작하며 한 라운드에 최대 1개만 잃습니다. 시간 제한 없이 플레이할 수 있고, 처음 실행하면 튜토리얼 안내가 표시됩니다. 전체를 압축 해제한 뒤 `Bobochu.exe`를 실행하세요. 같은 폴더의 `Bobochu.pck`를 이동하거나 삭제하지 마세요. Godot 설치는 필요 없습니다.
 
-Windows 실제 실행과 한국어 원어민 교정은 아직 검증 전입니다. 실행 문제나 어색한 표현은 초대한 사람에게 알려 주시거나 Issues에 남겨 주세요.
+Windows 실제 실행, 알림음 청취와 한국어 원어민 교정은 아직 검증 전입니다. 실행 문제나 어색한 표현은 초대한 사람에게 알려 주시거나 Issues에 남겨 주세요.
 
 无需安装 Godot。请先完整解压，再启动里面的应用。
 
@@ -27,9 +29,10 @@ Windows 실제 실행과 한국어 원어민 교정은 아직 검증 전입니�
 
 ## 怎么玩
 
-1. 选择 Bot 难度和角色，点击“开始对局”。本版固定为一名玩家对三个 Bot；角色目前只有外观区别。
-2. 从“储 / 进攻 / 防御 / 特殊”选择动作，需要目标时再选择对手，最后锁定。
-3. 所有人锁定后统一结算；看完结果，点击“下一回合”继续。具体数值和例子请点游戏内“怎么玩”。
+1. 首次打开可点击右上角新手教程，先认识界面，再练习储、小波和小防；也可选择以后不再自动提醒。
+2. 选择 Bot 难度和角色，点击“开始对局”。本版固定为一名玩家对三个 Bot，不限思考时间；角色目前只有外观区别。每人2气、2心开局，每轮最多失1心，0心淘汰。
+3. 从“储 / 进攻 / 防御 / 特殊”选择动作，需要目标时再选择对手，最后锁定。
+4. 所有人锁定后统一结算；看完结果，点击“下一回合”继续。可复制本轮战报反馈；具体数值和例子请点游戏内“怎么玩”。
 
 遇到打不开、崩溃或不懂的地方，都可以反馈；不必等到打完整局。
 
@@ -39,7 +42,7 @@ Windows 실제 실행과 한국어 원어민 교정은 아직 검증 전입니�
 
 ```text
 系统与版本：
-试玩包版本与语言：v0.1-test2 / v0.1-test2-ko
+试玩包版本与语言：v0.1-test3 / v0.1-test3-ko
 Bot 难度：
 现象（哪里不懂 / 预期与实际有什么不同）：
 出现时第几回合、各玩家动作（记得多少写多少）：
@@ -54,7 +57,7 @@ Bot 难度：
 试玩包中附有试玩说明、构建信息与第三方授权。当前 ZIP 的 SHA-256：
 
 ```text
-01a0784e174828731ae153f780abfb9f9955ca8f6a6deef91235d3a9bd553c81  Bobochu-v0.1-test2-macOS.zip
-f5292101649afd1957db5d238845e609e2da677b6f3c9af2ff2fa49314e24e2f  Bobochu-v0.1-test2-windows-x86_64.zip
-7f1bc47f187528f8ff191ea088f4b76020042b90643f4001c0abe42d6184111d  Bobochu-v0.1-test2-ko-windows-x86_64.zip
+829aa2f429b2720ba85655a0e9bd386ca03be826b15b8f8a52e47e319fa59087  Bobochu-v0.1-test3-macOS.zip
+0fd92f6395b55d2b8d9552eda6b88374e0cba9a8510c2b70638616704d91f5e9  Bobochu-v0.1-test3-windows-x86_64.zip
+6b5a8212563826055e21bb83bdef787ac361cc0cb6e49f760b33d53d2d552e3f  Bobochu-v0.1-test3-ko-windows-x86_64.zip
 ```
